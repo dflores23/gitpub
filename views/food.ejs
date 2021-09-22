@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Drinks App</title>
+        <style type="text/css">
+            body{
+                background-color: blanchedalmond;
+                color: steelblue;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            } 
+            
+        </style>
+    </head>
+    
+    <body>
+        <h1>
+        Welcome to GitPub
+        </h1>
+        <ul>
+            <% for(let i = 0; i < allFood.length; i++) { %>
+                <li>
+                    <a href="/food/<%= i %>">
+                        <%=allFood[i].name %>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </body>
+</html>
